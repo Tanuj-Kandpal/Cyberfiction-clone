@@ -1,0 +1,123 @@
+@font-face {
+  font-family: gilroy;
+  src: url(./Gilroy-Bold.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+canvas {
+  position: relative;
+  z-index: 9;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#page {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vw;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100vw;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100vw;
+}
+
+#loop {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+#loop > h1 {
+  animation-name: righttoleft;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+}
+h1 {
+  font-family: gilroy;
+  font-size: 200px;
+  white-space: nowrap;
+}
+
+#text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+@keyframes righttoleft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  padding: 10px 15px;
+  top: 0%;
+  z-index: 9999;
+}
+
+.nav-right > h2 {
+  font-weight: 400;
+}
+.cyber-text {
+  font-weight: 800;
+}
+.nav-button {
+  background-color: black;
+  color: white;
+  padding: 6px;
+  border-radius: 30px;
+  text-align: center;
+}
+.main-text {
+  display: flex;
+  gap: 100px;
+  position: relative;
+  top: 450px;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.main-left {
+  width: 30%;
+}
+.main-right {
+  width: 30%;
+}
